@@ -68,7 +68,7 @@ $$\lim_{m\to\infty}(1-\frac{1}{m})\to\frac{1}{e}\approx0.368$$
     
     > 泛化误差可分解为偏差、方差与噪声之和。
     
-    $$E(f;D)=bias^2(x)+var(x)+\epsilon^2$$
+$$E(f;D)=bias^2(x)+var(x)+\epsilon^2$$
     
     > 训练程度小时，偏差大，方差小，泛化误差大；
     >
