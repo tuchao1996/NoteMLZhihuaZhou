@@ -43,7 +43,7 @@
     
         > 从m个样本中每次随机挑选一个后，加入D'中。该采样过程进行m次，得到和D相同大小的D'。由公式可知
 
-![](https://chart.googleapis.com/chart?cht=tx&chl=\lim_{m\to\infty}(1-\frac{1}{m})\to\frac{1}{e}\approx0.368 )
+        $$\lim_{m\to\infty}(1-\frac{1}{m})\to\frac{1}{e}\approx0.368$$
         
         > D'中存在0.368概率的样本未被选中，因此可将D'作为训练集，D作为测试集。
         
@@ -68,7 +68,7 @@
     
     > 泛化误差可分解为偏差、方差与噪声之和。
     
-![](https://chart.googleapis.com/chart?cht=tx&chl=E(f;D)=bias^2(x)+var(x)+\epsilon^2)
+    $$E(f;D)=bias^2(x)+var(x)+\epsilon^2$$
     
     > 训练程度小时，偏差大，方差小，泛化误差大；
     >
