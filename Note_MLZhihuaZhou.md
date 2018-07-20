@@ -90,11 +90,9 @@ $$f(x)=w^Tx+b$$
 
 闭式解（closed-form）如下：
 
-$$
-w = \frac{\sum_{i=1}^{m}y_{i}(x_{i}-\overline{x})}{\sum_{i=1}^{m}x_{i}^2-\frac{1}{m}(\sum_{i=1}^{m}x_{i})^2}
+$$w = \frac{\sum_{i=1}^{m}y_{i}(x_{i}-\overline{x})}{\sum_{i=1}^{m}x_{i}^2-\frac{1}{m}(\sum_{i=1}^{m}x_{i})^2}$$
 
-b=\frac{1}{m}\sum_{i=1}^{m}(y_{i}-wx_{i})
-$$
+$$b=\frac{1}{m}\sum_{i=1}^{m}(y_{i}-wx_{i})$$
 
 线性模型可变形，如“对数线性回归”（log-linear regression）。
 
