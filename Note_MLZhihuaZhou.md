@@ -1,3 +1,7 @@
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 # 机器学习周志华 学习笔记
 
 ## 第一章 绪论
@@ -43,7 +47,7 @@
     
         > 从m个样本中每次随机挑选一个后，加入D'中。该采样过程进行m次，得到和D相同大小的D'。由公式可知
         
-        $$ \lim_{m \to \infty}(1-\frac{1}{m}) \to \frac{1}{e} \approx 0.368 $$
+        $$\lim_{m \to \infty}(1-\frac{1}{m}) \to \frac{1}{e} \approx 0.368$$
         
         > D'中存在0.368概率的样本未被选中，因此可将D'作为训练集，D作为测试集。
         
@@ -68,9 +72,7 @@
     
     > 泛化误差可分解为偏差、方差与噪声之和。
     
-    ```math
-    E(f;D) = bias^2(x)+var(x)+\epsilon^2
-    ```
+    $$E(f;D) = bias^2(x)+var(x)+\epsilon^2$$
     
     > 训练程度小时，偏差大，方差小，泛化误差大；
     >
@@ -82,9 +84,7 @@
 
 基本的数学表达形式如下所示：
 
-```math
-f(x)=w^Tx+b
-```
+$$f(x)=w^Tx+b$$
 
 ### 3.2 线性回归（linear regression）
 
@@ -93,24 +93,23 @@ f(x)=w^Tx+b
 几何意义对应“欧式距离最小”（Euclidean distance），基于MSE进行模型求解的方法为“最小二乘法”（least square method）。
 
 闭式解（closed-form）如下：
-```math
+
+$$
 w = \frac{\sum_{i=1}^{m}y_{i}(x_{i}-\overline{x})}{\sum_{i=1}^{m}x_{i}^2-\frac{1}{m}(\sum_{i=1}^{m}x_{i})^2}
 
 b=\frac{1}{m}\sum_{i=1}^{m}(y_{i}-wx_{i})
-```
+$$
 
 线性模型可变形，如“对数线性回归”（log-linear regression）。
-```math
-lny=w^Tx+b
-```
+
+$$lny=w^Tx+b$$
 
 ### 3.3 对数几率回归（logistic regression）
 
 Sigmoid函数
-```math
-y=\frac{1}{1+e^{-z}}
-```
+
+$$y=\frac{1}{1+e^{-z}}$$
+
 该函数对应为“对数几率回归”，是一种分类方法。
 
 ### 3.4 线性判别分析
-
