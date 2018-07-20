@@ -44,7 +44,7 @@
     * 自助法（bootstrapping）
     
         > 从m个样本中每次随机挑选一个后，加入D'中。该采样过程进行m次，得到和D相同大小的D'。由公式可知
-        ![](http://chart.googleapis.com/chart?cht=tx&chl=\Large \lim_{m \to \infty}(1-\frac{1}{m}) \to \frac{1}{e} \approx 0.368)
+        ![](http://chart.googleapis.com/chart?cht=tx&chl=\lim_{m \to \infty}(1-\frac{1}{m}) \to \frac{1}{e} \approx 0.368)
         
         > D'中存在0.368概率的样本未被选中，因此可将D'作为训练集，D作为测试集。
         
